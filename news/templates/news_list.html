@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+    News
+{% endblock title %}
+
+
+{% block content %}
+<body class = "body-color">
+    {% for news in object_list %}
+    <div class="card">
+        <div class="card-header">
+            <span class="fw-bold">
+                {{news.title}}
+            </span>
+            <span class="text-muted mx-2">
+              by  {{news.author}} | {{news.date}}
+            </span>
+        </div>
+        <div class="card-body">
+            {{news.body}}
+        </div>
+        <div class="card-footer text-center text-muted">
+            <a href="{% url 'news_edit' news.pk %}">Edit</a> | 
+            <a href="{% url 'news_delete' news.pk %}">Delete</a>
+        </div>
+    </div>
+    <br />
+{% endfor %}
+</body>
+  
+{% endblock content %}
+    
+    

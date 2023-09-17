@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+<body class = "body-color">
+    <h1 class = "general-font">New Article</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button class="btn btn-success  py-2 mb-3" type='submit'>Save</button>
+    </form> 
+</body>
+    
+{% endblock content %}
+    

@@ -1,0 +1,40 @@
+.custom-navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px #777;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-nav .nav-link {
+    color: black; /* Set the text color to white */
+}
+.navbar-brand{
+    font-family: 'Caveat', cursive;
+    font-size: 48;
+    letter-spacing: 2px;
+    
+}
+.Sign{
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+    font-size: 48;
+}
+.login{
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+    font-size: 48;
+}
+.body-color{
+    background-color:#f8c366;
+}
+.link-colour{
+    color:black
+}
+.general-font{
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+}
+.btn-info{
+    background-color: #f8c366;
+}
+
+

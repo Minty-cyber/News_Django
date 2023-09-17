@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock title %}
+{% block content %}
+<body class = "body-color">
+    <div>
+        <h1 class ="display-4">NewsPaper app</h1><br/>
+        <p class="lead"> A NewsPaper bulit with Django</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg"
+             href="{% url 'news_list' %}" role = "button">
+                View All Articles
+            </a>
+        </p>
+    </div>
+</body>
+
+{% endblock content %}  
+
+
+    
+    
